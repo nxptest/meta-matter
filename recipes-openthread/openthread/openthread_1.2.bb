@@ -1,4 +1,5 @@
 PN = "openthread"
+PR = "r0"
 SUMMARY = "OT-DAEMON on i.MX boards"
 DESCRIPTION = "OPENTHREAD applications"
 LICENSE = "BSD-3-Clause"

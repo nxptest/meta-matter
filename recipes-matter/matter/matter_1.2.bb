@@ -1,17 +1,18 @@
 PN = "matter"
+PR = "r0"
 SUMMARY = "Matter IoT connectivity on i.MX boards"
 DESCRIPTION = "This layer loads the main Matter applications"
 LICENSE = "Apache-2.0"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/Apache-2.0;md5=89aea4e17d99a7cacdbeed46a0096b10"
 
-SRCBRANCH = "v1.1-branch-nxp_imx_2023_q2"
+SRCBRANCH = "v1.0.0.2-tag-nxp-mrk-v1.2"
 IMX_MATTER_SRC ?= "gitsm://github.com/NXP/matter.git;protocol=https"
 SRC_URI = "${IMX_MATTER_SRC};branch=${SRCBRANCH}"
 MATTER_PY_PATH ?= "/usr/bin/python3"
 
 PATCHTOOL = "git"
 
-SRCREV = "3d49f03b180ce617bb8050c1d8384ab714a21b53"
+SRCREV = "dc28266d3024bbd5a1f6eb1965536ffd9712d1fe"
 
 TARGET_CC_ARCH += "${LDFLAGS}"
 DEPENDS += " gn-native ninja-native avahi dbus-glib-native pkgconfig-native zap-native boost "
