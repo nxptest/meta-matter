@@ -1,0 +1,11 @@
+[Unit]
+Description=Set up OTBR after wireless of IW612 is ready
+After=iw612-initbt
+
+[Service]
+Type=forking
+ExecStart=/usr/share/nxp_iw612/scripts/otbr.sh
+TimeoutSec=0
+
+[Install]
+WantedBy=multi-user.target
